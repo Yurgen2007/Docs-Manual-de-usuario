@@ -6,6 +6,11 @@ tableOfContents: false
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../components/ApiEndpoint.astro";
 
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
 <Tabs>
   <TabItem label="Endpoint">
     <ApiEndpoint url={`http://localhost:300/usuarios`}/>
