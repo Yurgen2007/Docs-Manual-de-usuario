@@ -30,4 +30,21 @@ export default defineConfig({
       ],
     }),
   ],
+	integrations: [
+		starlight({
+			title: 'My Docs',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			sidebar: [
+				
+				{
+					label: 'Usuarios',
+					items: [
+						{ label: 'Añadir Usuario', slug: 'usuarios/crearUsuario' },
+						{ label: 'Carga masiva de usuarios', slug: 'usuarios/subirMasivo' },
+						{ label: 'Modos de busqueda', slug: 'usuarios/filtros' },
+					],
+				},
+			],
+		}),
+	],
 });

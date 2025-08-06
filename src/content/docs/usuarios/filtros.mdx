@@ -1,0 +1,31 @@
+---
+title: "Carga masiva de usuarios"
+slug: "usuarios/filtros"
+tableOfContents: false
+
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/usuarios`}/>
+  </TabItem>
+  <TabItem label="Endpoint">
+    otro
+  </TabItem>
+</Tabs>
+
+
+<img src="/public/FiltrosUser.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+
+En la parte superior de la tabla podra encontrar varios botones para una busqueda rapida y consisa por medio de datos especificos como 
+estado 
+
+<img src="/public/FormMasivo.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+
+Y al realizar esto automaticamente se le asignan unas contraseñas a esos usuarios, que corresponden a su primera letra de nombre y apellido en minuscula 
+seguido de su numero de documento, y en caso tal de que el usuario quiera cambiar su contraseña puede ver el apartado de <a href="/usuarios/subirMasivo">editar datos del perfil</a>
+
+De igual forma los usuarios registrados masivamente podran verse en la tabla de usuarios.
