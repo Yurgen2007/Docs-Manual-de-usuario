@@ -23,6 +23,12 @@ export default defineConfig({
               label: "Areas",
               items: [
                 { label: "registrar areas", slug: "areas/Registrar-area" },
+                { label: "Listar areas", slug: "areas/listar-areas" },
+                { label: "Editar areas", slug: "areas/editar-areas" },
+                {
+                  label: "Modificar estado de areas",
+                  slug: "areas/estado-areas",
+                },
               ],
             },
           ],

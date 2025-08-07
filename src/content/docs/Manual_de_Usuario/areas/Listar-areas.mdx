@@ -1,0 +1,36 @@
+---
+title: "Listar Areas"
+slug: "areas/listar-areas"
+---
+
+import { Image } from "astro:assets";
+import listarArea from "../../../../assets/funcionalidades/areas/listar areas.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/areas`} />
+  </TabItem>
+</Tabs>
+
+Para poder ver el listado de areas registradas en el sistema debera dirigirse al modulo de areas que se encuentra en sidebar en donde podra observar cada una de las funcionalidades de esta vista como lo son los filtros el añadir un area, editarla, cambiar su estado, tambien encontrara los botones con redireccionamiento y lo mas importante la tabla con la informacion de las diferentes areas registradas, como lo es nombre del area, persona encargada, fecha de creación, fecha de actualizacion y la columna de acioones en donde se encuentra la opcion de editar y cambiar estado en la parte inferior de la tabla tabla encontrata un paginada.
+
+<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/4JsYTNDP5tU"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
