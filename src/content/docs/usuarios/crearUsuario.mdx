@@ -3,6 +3,7 @@ title: "Añadir Usuario"
 slug: "usuarios/crearUsuario"
 tableOfContents: false
 ---
+
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../components/ApiEndpoint.astro";
 
@@ -13,14 +14,10 @@ import ApiEndpoint from "../../../components/ApiEndpoint.astro";
 
 <Tabs>
   <TabItem label="Endpoint">
-    <ApiEndpoint url={`http://localhost:300/usuarios`}/>
+    <ApiEndpoint url={`http://localhost:300/usuarios`} />
   </TabItem>
-  <TabItem label="Endpoint">
-    otro
-  </TabItem>
+  <TabItem label="Endpoint">otro</TabItem>
 </Tabs>
-
-
 
 En la vista general del apartado de usuarios que se encuentra dentro de el modulo Admin, podra realizar varias acciones como:
 
@@ -39,24 +36,21 @@ En la vista general del apartado de usuarios que se encuentra dentro de el modul
   </li>
 </ol>
 
-
 <h3>Mockup</h3>
 
-<img src="/public/Añadirusuario.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+<img
+  src="/public/Añadirusuario.jpg"
+  alt="Descripción de la imagen"
+  style={{ width: "100%", maxWidth: "1200px" }}
+/>
 
-En la parte superior izquierda el usuario podra encontrar un boton azul "Añadir usuario" el cual, como su nombre lo indica es para añadir un nuevo usuario al 
+En la parte superior izquierda el usuario podra encontrar un boton azul "Añadir usuario" el cual, como su nombre lo indica es para añadir un nuevo usuario al
 sistema, al darle clik este mostrará un formulario donde se le solicita llenar los datos basicos para el nuevo usuario como documento, nombre, telefono , etc.
 
-
-<img src="/public/FormRegisUser.jpg" alt="Descripción de la imagen" style={{ width: '50', maxWidth: '300px' }} />
+<img
+  src="/public/FormRegisUser.jpg"
+  alt="Descripción de la imagen"
+  style={{ width: "50", maxWidth: "300px" }}
+/>
 
 Y al momento de darle en el boton de guardar, se podra ver el usuario registrado en la tabla
-
-
-
-
-
-
-
-
-

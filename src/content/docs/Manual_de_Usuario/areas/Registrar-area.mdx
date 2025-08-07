@@ -6,8 +6,16 @@ slug: "areas/Registrar-area"
 import { Image } from "astro:assets";
 import registraArea from "../../../../assets/funcionalidades/areas/botonAgregarArea.png";
 import formularioregistraArea from "../../../../assets/funcionalidades/areas/fomularioAgregarArea.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
 
-# Registrar Área
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/areas`} />
+
+  </TabItem>
+</Tabs>
 
 Para poder registrar una área correctamente deberá dirigirse al botón azul ubicado
 en la parte superior izquierda, el cual desplegará el respectivo modal (formulario)
@@ -32,7 +40,7 @@ Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
   <iframe
     width="720"
     height="405"
-    src="https://www.youtube.com/embed/a5fHoAx12DY"
+    src="https://www.youtube.com/embed/_B0hBFlsNHI"
     title="Tutorial"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
