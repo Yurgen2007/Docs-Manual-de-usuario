@@ -1,0 +1,36 @@
+---
+title: "Listar programas"
+slug: "programas/listar-programas"
+---
+
+import { Image } from "astro:assets";
+import listarprogramas from "../../../../assets/funcionalidades/programas/listar programa.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/programas`} />
+  </TabItem>
+</Tabs>
+
+Para poder ver el listado de programas registrados en el sistema debera dirigirse al modulo de fichas que se encuentra en sidebar ese lo redirecionara a la vista de gestionar fichas, luego dara clic en el boton (gestionar programas) ubicado en la parte superior derecha de la vista el cual lo redirecionara a la vista de gestion de programas en donde podra observar cada una de las funcionalidades de esta vista como lo son cada uno del los filtros, el añadir un programa, editarlo, cambiar su estado, tambien encontrara los botones con redireccionamiento y lo mas importante la tabla con la informacion de los diferentes programas registradas, como lo son: nombre del programa, fecha de creación, fecha de actualizacion y la columna de acciones en donde se encuentra la opcion de editar y cambiar estado, y por ultimo en la parte inferior de la tabla encontrara un paginado para que nuetra vista no se sature de informacion.
+
+<Image src={listarprogramas} alt="listarprogramas" width={3148} height={2270} />
+
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/guSxscvVnvA"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

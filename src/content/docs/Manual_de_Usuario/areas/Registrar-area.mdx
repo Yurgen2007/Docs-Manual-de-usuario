@@ -1,5 +1,49 @@
 ---
-title: "Registrare Area"
-description: "Busca un área en el sistema."
+title: "Registrar Area"
 slug: "areas/Registrar-area"
 ---
+
+import { Image } from "astro:assets";
+import registraArea from "../../../../assets/funcionalidades/areas/botonAgregarArea.png";
+import formularioregistraArea from "../../../../assets/funcionalidades/areas/fomularioAgregarArea.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/areas`} />
+
+  </TabItem>
+</Tabs>
+
+Para poder registrar una área correctamente deberá dirigirse al botón azul ubicado
+en la parte superior izquierda, el cual desplegará el respectivo modal (formulario)
+para poder registrar un área correctamente.
+
+<Image src={registraArea} alt="Botón agregar área" width={3148} height={2270} />
+
+Al dar clic en el botón (añadir área) este desplegará el siguiente modal en donde deberá registrar la información requerida y finalmente dará clic en "guardar". Seguidamente se agregará un área al sistema.
+
+<Image
+  src={formularioregistraArea}
+  alt="Formulario registrar área"
+  width={3148}
+  height={2270}
+/>
+
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/_B0hBFlsNHI"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
