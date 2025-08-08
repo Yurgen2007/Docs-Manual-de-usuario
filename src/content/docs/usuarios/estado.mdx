@@ -1,0 +1,31 @@
+---
+title: "Cambiar estado del Usuario"
+slug: "usuarios/estado"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge note small astro-avdet4wd">PATCH</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/usuarios`}/>
+  </TabItem>
+</Tabs>
+
+
+
+<img src="/public/users/estado.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+
+Dentro de la tabla principal de usuarios podemos ver una columna de acciones, dentro de esa columna podemos ver dos iconos 
+uno el del check que es para activar el estado del usuario y el de la basurita para desactivarlo
+
+Video explicativo: https://youtu.be/BY888edGrVM
+

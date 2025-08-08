@@ -1,0 +1,57 @@
+---
+title: "Listar Centros"
+slug: "centros/listar"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge success small astro-avdet4wd">GET</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/centros`}/>
+  </TabItem>
+</Tabs>
+
+
+
+En la vista general del apartado de centros, podra realizar varias acciones como:
+
+<ol>
+  <li>
+    <a href="/centros/listar">Listar centros</a>
+  </li>
+  <li>
+    <a href="/centros/crear">Crear centros</a>
+  </li>
+  <li>
+    <a href="/centros/actualizar">Editar usuario</a>
+  </li>
+  <li>
+    <a href="/centros/estado">Cambiar estado del centro</a>
+  </li>
+</ol>
+
+
+<h3>Mockup</h3>
+
+<img src="/public/centros/listar.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+Como primera medida en la parte superior derecha tenemos dos botones sedes y gestionar municipios ambos son para administrar 
+cada uno de ellos y redirigen a la pagina correspondiente de cada uno de ellos 
+
+Luego tenemos una tabla con informacion de los centros que hay registrados, dentro de ella tambien podemos ver una columna
+de acciones, dentro de las acciones una es para <a href="/centros/actualizar">editar</a> y otra para <a href="/centros/estado">cambiar estado</a> 
+
+
+<img src="/public/centros/filtros.jpg" alt="Descripción de la imagen" style={{ width: '5000px', maxWidth: '800px' }} />
+
+En la parte superior de la tabla tenemos unos botones que le ayudan a una busqueda rapida o filtrado de centros que lo explicamos en el siguiente video
+
+Video explicativo:https://youtu.be/hVhIHg7XkDE

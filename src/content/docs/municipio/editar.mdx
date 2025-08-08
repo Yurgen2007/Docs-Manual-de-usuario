@@ -1,0 +1,31 @@
+---
+title: "Editar municipio"
+slug: "municipio/editar"
+tableOfContents: false
+---
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge note small astro-avdet4wd">PATCH</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/municipios`}/>
+  </TabItem>
+</Tabs>
+
+<img src="/public/municipio/editar.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+
+Dentro de la tabla principal de municipios podemos ver una columna de acciones, dentro de esa columna esta un icono de "pencil"
+que es como un lapiz que al seleccionarlo nos abrira un modal con la informacion de ese municipio correspondiente, con los datos
+que podemos modificar y al final un boton de "guardar" para guardar los cambios realizados y luego se mostrara el 
+municipio con los datos actualizados en la tabla.
+
+<img src="/public/municipio/formeditar.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '600px' }} />
+
+Video explicativo: https://youtu.be/BvvpUqA0i68
+
+

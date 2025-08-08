@@ -1,0 +1,31 @@
+---
+title: "Editar perfil del Usuario"
+slug: "usuarios/editarperfil"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/perfil`}/>
+  </TabItem>
+</Tabs>
+
+<img src="/public/users/perfil.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '500px' }} />
+
+En la parte superior derecha del navbar podemos ver la foto de perfil del usuario, al darle clik nos redirige a la vista del perfil 
+de usuario donde se encuentra todo la informacion del mismo en la parte superior derecha vemos un icono de un lapiz que al darle clik nos mostrara 
+un formulario donde podemos cambiar la informacion del perfil, y si hacemos click en la imagen podremos editarla tambien
+
+<img src="/public/users/formperfil.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '500px' }} />
+
+Video explicativo: https://youtu.be/SegLw599yxo
+

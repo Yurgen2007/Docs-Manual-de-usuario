@@ -1,0 +1,38 @@
+---
+title: "Editar usuarios"
+slug: "usuarios/editar"
+tableOfContents: false
+---
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge note small astro-avdet4wd">PATCH</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/usuarios`}/>
+  </TabItem>
+</Tabs>
+
+<img src="/public/users/editar.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+
+Dentro de la tabla principal de usuarios podemos ver una columna de acciones, dentro de esa columna esta un icono de "pencil"
+que es como un lapiz que al seleccionarlo nos abrira un modal con la informacion de ese usuario correspondiente con los datos
+que podemos modificar y al final un boton de "guardar" para guardar los cambios realizados a ese usuario y luego se mostrara el 
+usuario con los datos actualizados en la tabla
+
+
+<img src="/public/users/formeditar.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '600px' }} />
+
+En la parte derecha donde aparece el rol hay un icono de un mas el cual nos sirve para agregar un nuevo rol en caso de que 
+no exista el que deseemos asignarle al usuario
+
+<img src="/public/users/formeditrol.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+
+Video explicativo:
+
+

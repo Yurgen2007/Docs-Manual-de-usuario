@@ -1,0 +1,36 @@
+---
+title: "Añadir categorias"
+slug: "categorias/crear"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/bodega/categorias`}/>
+  </TabItem>
+</Tabs>
+
+
+<h3>Mockup</h3>
+
+<img src="/public/categorias/añadir.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+En la parte superior izquierda el usuario podra encontrar un boton azul "Añadir Categoria" el cual, nos ayuda a añadir una nueva categoria al 
+sistema, al darle clik este mostrará un formulario donde se le solicita llenar los datos basicos para la nueva categoria como nombre y codigo. 
+
+
+<img src="/public/categorias/formcrear.jpg" alt="Descripción de la imagen" style={{ width: '50', maxWidth: '300px' }} />
+
+Y al momento de darle en el boton de guardar, se podra ver la categoria registrada en la tabla.
+
+Video explicativo: https://youtu.be/5TuqR-gyvMo
+
+
