@@ -1,0 +1,49 @@
+---
+title: "Registrar fichas"
+slug: "fichas/Registrar-fichas"
+---
+
+import { Image } from "astro:assets";
+import registrafichas from "../../../../assets/funcionalidades/fichas/boton añadir sedes.png";
+import formularioregistrafichas from "../../../../assets/funcionalidades/fichas/agregar fichas.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/fichas`} />
+
+  </TabItem>
+</Tabs>
+
+Para poder registrar una ficha correctamente deberá dirigirse al botón azul ubicado
+en la parte superior izquierda de esta vista (añadir ficha), el cual desplegará el respectivo modal (formulario)
+para poder registrar una ficha correctamente.
+
+<Image src={registrafichas} alt="registrafichas" width={3148} height={2270} />
+
+Al dar clic en el botón (añadir ficha) este desplegará el siguiente modal en donde deberá registrar la información requerida y finalmente dará clic en "guardar", seguidamente se agregará la ficha al sistema.
+
+<Image
+  src={formularioregistrafichas}
+  alt="formularioregistrafichas"
+  width={3148}
+  height={2270}
+/>
+
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/E7uVilkfpfI"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
