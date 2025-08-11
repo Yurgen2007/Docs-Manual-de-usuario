@@ -1,0 +1,54 @@
+---
+title: "Registrar programas"
+slug: "programas/Registrar-programas"
+---
+
+import { Image } from "astro:assets";
+import registraprogramas from "../../../../assets/funcionalidades/programas/boton añadir programa.png";
+import formularioregistraprogramas from "../../../../assets/funcionalidades/programas/añadir programa.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/programas`} />
+
+  </TabItem>
+</Tabs>
+
+Para poder registrar una programa correctamente deberá dirigirse al botón azul ubicado
+en la parte superior izquierda de esta vista (añadir programas), el cual desplegará el respectivo modal (formulario)
+para poder registrar una programa correctamente.
+
+<Image
+  src={registraprogramas}
+  alt="registraprogramas"
+  width={3148}
+  height={2270}
+/>
+
+Al dar clic en el botón (añadir programas) este desplegará el siguiente modal en donde deberá registrar la información requerida y finalmente dará clic en "guardar". Seguidamente se agregará el programa al sistema y se plasmara esta información en la tabla.
+
+<Image
+  src={formularioregistraprogramas}
+  alt="formularioregistraprogramas"
+  width={3148}
+  height={2270}
+/>
+
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/ouGYe5Irveg"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
