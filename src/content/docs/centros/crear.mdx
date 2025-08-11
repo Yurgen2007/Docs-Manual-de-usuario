@@ -1,0 +1,47 @@
+---
+title: "Añadir Centros"
+slug: "centros/crear"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/centros`}/>
+  </TabItem>
+</Tabs>
+
+
+<h3>Mockup</h3>
+
+<img src="/public/centros/añadir.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+En la parte superior izquierda el usuario podra encontrar un boton azul "Añadir centro" el cual, como su nombre lo indica es para añadir un nuevo centro al 
+sistema, al darle clik este mostrará un formulario donde se le solicita llenar los datos basicos para el nuevo centro como nombre y municipio. 
+Al lado del campo "selecciona un municipio" podemos ver un mas, este nos permite crear un nuevo municipio en caso de que no exista como se muestra en el video explicativo
+
+
+<img src="/public/centros/formcrear1.jpg" alt="Descripción de la imagen" style={{ width: '50', maxWidth: '300px' }} />
+
+Y al momento de darle en el boton de guardar, se podra ver el centro registrado en la tabla.
+
+Video explicativo: 
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/01AAPJlmnG0"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

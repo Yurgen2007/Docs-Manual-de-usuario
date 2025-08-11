@@ -1,0 +1,46 @@
+---
+title: "Añadir Municipio"
+slug: "municipio/crear"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/municipios`}/>
+  </TabItem>
+</Tabs>
+
+
+<h3>Mockup</h3>
+
+<img src="/public/municipio/crear.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+En la parte superior izquierda el usuario podra encontrar un boton azul "Añadir Municipio" el cual, nos ayuda a añadir un nuevo municipio al 
+sistema, al darle clik este mostrará un formulario donde se le solicita llenar los datos basicos para el nuevo municipio como nombre y departamento. 
+
+
+<img src="/public/municipio/formcrear.jpg" alt="Descripción de la imagen" style={{ width: '50', maxWidth: '300px' }} />
+
+Y al momento de darle en el boton de guardar, se podra ver el municipio registrado en la tabla.
+
+Video explicativo:
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/dVBiA-oSHGE"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+

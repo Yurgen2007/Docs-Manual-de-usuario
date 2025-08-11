@@ -3,55 +3,48 @@ title: "Añadir Usuario"
 slug: "usuarios/crearUsuario"
 tableOfContents: false
 ---
+
+
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
 
 <Tabs>
   <TabItem label="Endpoint">
-    <ApiEndpoint url={`http://localhost:300/usuarios`}/>
-  </TabItem>
-  <TabItem label="Endpoint">
-    otro
+    <ApiEndpoint url={`/admin/usuarios`}/>
   </TabItem>
 </Tabs>
 
 
-
-En la vista general del apartado de usuarios que se encuentra dentro de el modulo Admin, podra realizar varias acciones como:
-
-<ol>
-  <li>
-    <a href="/usuarios/subirMasivo">Subir masivamente usuario</a>
-  </li>
-  <li>
-    <a href="/usuarios/subirMasivo">Editar usuario</a>
-  </li>
-  <li>
-    <a href="/usuarios/subirMasivo">Cambiar estado del usuario</a>
-  </li>
-  <li>
-    <a href="/usuarios/subirMasivo">Filtrados ...</a>
-  </li>
-</ol>
-
-
 <h3>Mockup</h3>
 
-<img src="/public/Añadirusuario.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+<img src="/public/users/Añadirusuario.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
 
 En la parte superior izquierda el usuario podra encontrar un boton azul "Añadir usuario" el cual, como su nombre lo indica es para añadir un nuevo usuario al 
-sistema, al darle clik este mostrará un formulario donde se le solicita llenar los datos basicos para el nuevo usuario como documento, nombre, telefono , etc.
+sistema, al darle clik este mostrará un formulario donde se le solicita llenar los datos basicos para el nuevo usuario como documento, nombre, telefono , etc. 
+Al lado del campo "selecciona un rol" podemos ver un mas, este nos permite crear un nuevo rol en caso de que no exista como se muestra en el video explicativo
 
 
-<img src="/public/FormRegisUser.jpg" alt="Descripción de la imagen" style={{ width: '50', maxWidth: '300px' }} />
+<img src="/public/users/FormRegisUser.jpg" alt="Descripción de la imagen" style={{ width: '50', maxWidth: '300px' }} />
 
-Y al momento de darle en el boton de guardar, se podra ver el usuario registrado en la tabla
+Y al momento de darle en el boton de guardar, se podra ver el usuario registrado en la tabla.
 
+Video explicativo:
 
-
-
-
-
-
-
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/B3YmHB8HFyM"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
 

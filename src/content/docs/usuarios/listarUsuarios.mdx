@@ -1,0 +1,75 @@
+---
+title: "Listar Usuarios"
+slug: "usuarios/listarUsuarios"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge success small astro-avdet4wd">GET</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/usuarios`}/>
+  </TabItem>
+</Tabs>
+
+
+
+En la vista general del apartado de usuarios que se encuentra dentro de el modulo Admin, podra realizar varias acciones como:
+
+<ol>
+  <li>
+    <a href="/usuarios/listarUsuarios">Listar usuarios</a>
+  </li>
+  <li>
+    <a href="/usuarios/crearUsuario">Crear usuario</a>
+  </li>
+  <li>
+    <a href="/usuarios/subirMasivo">Subir usuarios masivamente</a>
+  </li>
+  <li>
+    <a href="/usuarios/editar">Editar usuario</a>
+  </li>
+  <li>
+    <a href="/usuarios/estado">Cambiar estado del usuario</a>
+  </li>
+</ol>
+
+
+<h3>Mockup</h3>
+
+<img src="/public/users/listarUsuarios.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+Como primera medida en la parte superior derecha tenemos un apartado "gestionar roles" que nos sirve para dirigirnos a la vista de roles y poder hacer uso y gestion de estos
+
+Luego tenemos una tabla con informacion de los usuarios que hay registrados, dentro de ella tambien podemos ver una columna 
+que nos muestra el estado del usuario y otra de acciones, dentro de las acciones una es para <a href="/usuarios/editar">editar</a> y otra para <a href="/usuarios/estado">cambiar estado</a> 
+
+
+
+<img src="/public/users/FiltrosUser.jpg" alt="Descripción de la imagen" style={{ width: '5000px', maxWidth: '800px' }} />
+
+En la parte superior de la tabla tenemos unos botones que le ayudan a una busqueda rapida o filtrado de usuarios,
+primero en la parte superior izquierda tenemos el que nos ayuda a buscar los usuarios segun su estado, bien sea activo, inactivo o todos, otro en la parte superior derecha 
+que es para buscar un usuario por su nombre, seguido de otros dos que nos ayudan a buscar el usuario por fecha de inicio o fecha fin y por ultimo uno en la parte inferior
+de estos que nos ayuda con la paginacion de los usuarios.
+
+Video explicativo: 
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/OaHfIxTTh_Y"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
