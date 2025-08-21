@@ -36,6 +36,36 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
   </Card>
 </CardGrid>
 
+## 🗝️ Claves de Acceso
+
+En este apartado se definen las credenciales básicas necesarias para ingresar y utilizar el sistema Formatrack, así como los datos de autenticación utilizados por el bot de correo del sistema para enviar notificaciones o mensajes automatizados.
+
+### 🧑‍💼 Usuario Administrador por Defecto
+
+El sistema incluye un usuario administrador inicial con los siguientes datos, útil para el primer ingreso al sistema:
+
+```ts
+{
+  idUsuario: 1,
+  documento: 1111111111,
+  nombre: "Admin",
+  estado: true,
+  password: "hola1234",
+  fkRol: { idRol: 1 }
+}
+```
+
+### ✉️ Configuración del Correo para Recuperación de Contraseña
+
+Para permitir que los usuarios puedan recuperar su contraseña, es necesario configurar un correo SMTP. En este caso, se utiliza una cuenta de Gmail dedicada al sistema:
+
+```ts
+MAIL_USER = "formatrackbot@gmail.com";
+MAIL_PASSWORD = "gdjznmobipqgyqzs";
+```
+
+---
+
 ## 🚀 Tecnologías Utilizadas en el Proyecto
 
 El sistema **Formatrack** se encuentra dividido en dos partes fundamentales: **Frontend** y **Backend**, cada uno desarrollado con tecnologías modernas y ampliamente utilizadas en la industria del software.
