@@ -1,0 +1,46 @@
+---
+title: "Editar ficha"
+slug: "fichas/editar-ficha"
+---
+
+import { Image } from "astro:assets";
+import editarficha from "../../../../assets/funcionalidades/fichas/editar fichas.png";
+import botoneditarficha from "../../../../assets/funcionalidades/fichas/icono editar .png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/fichas`} />
+  </TabItem>
+</Tabs>
+
+Para poder editar una ficha correctamente debera dirijirce a la columna acciones ubicada en la parte derecha de la tabla la cual la puede reconocer con un icono de lapiz.
+
+<Image
+  src={botoneditarficha}
+  alt="botoneditarficha"
+  width={3148}
+  height={2270}
+/>
+
+Al dar clic en dicho icono se desplegará el siguiente modal con los campos disponibles a editar en el caso de las fichas  solo podra editar el codigo  de la ficha, luego de modificar el campo dara clic en el boton ubicado al final del formulairo "guardar", luego de ello se cerrara el formulario y automaticamente se modificara en la tabla.
+
+<Image src={editarficha} alt="editarficha" width={3148} height={2270} />
+
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/GfAQIY_Z3rQ"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

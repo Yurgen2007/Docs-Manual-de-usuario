@@ -1,0 +1,48 @@
+---
+title: "Registrar permisos"
+slug: "permisos/Registrar-permisos"
+---
+
+import { Image } from "astro:assets";
+import permisoslistar from "../../../../assets/funcionalidades/permisos/vista permisos.png";
+import permiso1 from "../../../../assets/funcionalidades/permisos/permisos 1.png";
+import permisos2 from "../../../../assets/funcionalidades/permisos/permisos 2.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}admin/permisos`} />
+
+  </TabItem>
+</Tabs>
+
+para poder asignar un permiso a un rol en especial primeramente debera dirigirse al sidebar en el modulo de usuarios, cuando se encuentre en esta vista se dirigira al boton de gestionar roles ubicado en la parte superior derecha, al dar clic en este nos redirigira a la vista de gestion de roles cuando estemos en esta vista nos dirigiremos a la columna permisos de nuestra tabla principal en donde encontraremos un boton de asignar.
+
+<Image src={permisoslistar} alt="permisoslistar" width={3148} height={2270} />
+
+Al dar clic en este boton desplegara en siguiente modal el cual son los modulos que tenemos en nuestro proyecto.
+
+<Image src={permiso1} alt="permiso1" width={3148} height={2270} />
+Al dar clic en cada uno de ellos desplegaran los submodulos disponibles y dentro
+de ellos las funcionalidades de cada una de las tablas en donde podra selecionar
+o deseleccionar las funcionalidades, y finalmente debera cerrar el modal en la parte
+superior derecha en la (x) y estos cambios se aplicaran automaticamente al rol selecionado.{" "}
+
+<Image src={permisos2} alt="permisos2" width={3148} height={2270} />
+### Si la información anterior no fue clara...
+
+Adjuntamos el siguiente video tutorial donde se explica el proceso completo:
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/bvOn8CBuxe4"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
