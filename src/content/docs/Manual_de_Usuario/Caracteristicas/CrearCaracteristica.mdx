@@ -1,0 +1,44 @@
+---
+title: "Crear una caracteristica"
+slug: "Caracteristicas/CrearCaracteristica"
+---
+
+
+import { Image } from "astro:assets";
+import listarArea from "../../../../assets/funcionalidades/caracteristicas/";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/caracteristicas`} />
+  </TabItem>
+</Tabs>
+
+Para crear una Caracteristica en primera instancia debemos centrarnos en la parte superior  izquierda  en nuestro apartado. Vamos a encontrar un boton  de nueva caracterisrica y vamos a dar click en este.
+<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+
+Lugo nos va a desplegar un formulario en donde tendremos los campos que requiere para el registro y debemos proceder a llenarlos.
+<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+
+Finalmente cuando llenemos esta informacion debemos dar click en guardar y por consiguiente  nos dara un alerta de registro exitoso y se añadira a nuestra tabla.
+<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice le siguiente video donde se dara una explicacion mas clara de la funcionalidad.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/o3ENiCB51To"
+    
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
