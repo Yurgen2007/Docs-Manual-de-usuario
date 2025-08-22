@@ -4,16 +4,43 @@ slug: "usuarios/subirMasivo"
 tableOfContents: false
 
 ---
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
 
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
 
-<img src="/public/Masiva.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/admin/usuarios`}/>
+  </TabItem>
+</Tabs>
 
-En la parte superior izquierda se encuentra el boton de "subir masivamente", que desplegara un formulario con el cual el usuario podra descargar un archivo excel con los 
-datos minimos para poder registrar varios usuarios a la vez, o simplemente cargar el archivo en caso de que ya lo tenga
+<img src="/public/users/Masiva.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
 
-<img src="/public/FormMasivo.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+En la parte superior izquierda se encuentra el boton de "subir masivamente", que desplegara un modal con el cual el usuario podra descargar un archivo excel con los 
+datos minimos para poder registrar varios usuarios a la vez, o simplemente cargar el archivo en caso de que ya lo tenga, tambien podemos ver dos botones,
+"cancelar" en caso de que no quiera realizar la accion o "crear usuarios" cuando ya tenga el archivo excel seleccionado
 
-Y al realizar esto automaticamente se le asignan unas contraseñas a esos usuarios, que corresponden a su primera letra de nombre y apellido en minuscula 
-seguido de su numero de documento, y en caso tal de que el usuario quiera cambiar su contraseña puede ver el apartado de <a href="/usuarios/subirMasivo">editar datos del perfil</a>
+<img src="/public/users/FormMasivo.jpg" alt="Descripción de la imagen" style={{ width: '500', maxWidth: '800px' }} />
+
+Y al realizar esto automaticamente se le asignan unas contraseñas a esos usuarios,y en caso tal de que el usuario quiera cambiar su contraseña 
+puede ver el apartado de <a href="/usuarios/editarperfil">editar datos del perfil</a>
 
 De igual forma los usuarios registrados masivamente podran verse en la tabla de usuarios.
+
+Video explicativo: 
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/e0x32rx9frU"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+

@@ -1,0 +1,37 @@
+---
+title: "Inicio de sesion"
+slug: "usuarios/login"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
+
+
+<img src="/public/users/login.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+
+Esta es la vista principal del sistema donde te pedira tus credenciales que son el correo y tu contraseña para poder ingresar al sistema,
+en caso de olvidar tu contraseña puedes ir a <a href="/usuarios/forgotpass">olvide mi contraseña</a>, de lo contrario puedes iniciar 
+sesion con el boton de ingresar 
+
+Video explicativo:
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/k-gH3GVp3zo"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+

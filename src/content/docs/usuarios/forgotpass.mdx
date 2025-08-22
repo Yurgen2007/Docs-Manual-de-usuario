@@ -1,0 +1,52 @@
+---
+title: "Olvide mi contraseña"
+slug: "usuarios/forgotpass"
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../utils/constants.ts";
+
+<p>
+  <strong>Método: </strong>
+  <span class="sl-badge caution small astro-avdet4wd">POST</span>
+</p>
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`/forgotPass`}/>
+  </TabItem>
+</Tabs>
+
+
+
+<img src="/public/users/forgotlogin.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+
+En la vista del login podemos ver un partado de "He olvidado mi contraseña" este nos sirve para poder reestablecer la contraseña en caso de haberla 
+olvidado, nos mostrara un partado donde nos pedira el correo que tengamos registrado en el sistema
+
+<img src="/public/users/fotgotpage.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+luego de ingresar el correo nos llegara un correo como el de la imagen y nos aparece un boton de restablecer contraseña
+
+<img src="/public/users/email.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+el cual nos redirecciona aqui donde podemos ingresar la nueva contraseña y su confirmacion y ya despues nos redirecciona al login
+
+<img src="/public/users/contraseña.jpg" alt="Descripción de la imagen" style={{ width: '100%', maxWidth: '1200px' }} />
+
+
+Video explicativo:
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    width="720"
+    height="405"
+    src="https://www.youtube.com/embed/MsU8aKb_xNk"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

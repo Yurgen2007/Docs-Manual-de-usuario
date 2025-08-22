@@ -19,6 +19,13 @@ export default defineConfig({
           label: "Manual de Usuario",
           items: [
             {
+              label: "Auth",
+              items: [
+                { label: "Inicio de sesion", slug: "usuarios/login" },
+                { label: "Cerrar sesion", slug: "usuarios/logout" },
+              ],
+            },
+            {
               label: "Areas",
               items: [
                 { label: "registrar areas", slug: "areas/Registrar-area" },
@@ -108,56 +115,159 @@ export default defineConfig({
             {
               label: "Usuarios",
               items: [
+                { label: "Listar Usuarios", slug: "usuarios/listarUsuarios" },
                 { label: "Añadir Usuario", slug: "usuarios/crearUsuario" },
                 {
                   label: "Carga masiva de usuarios",
                   slug: "usuarios/subirMasivo",
                 },
-                { label: "Modos de busqueda", slug: "usuarios/filtros" },
+                { label: "Editar usuario", slug: "usuarios/editar" },
+                {
+                  label: "Cambiar estado del usuario",
+                  slug: "usuarios/estado",
+                },
+                {
+                  label: "Editar perfil de usuario",
+                  slug: "usuarios/editarperfil",
+                },
+                { label: "Olvide mi contraseña", slug: "usuarios/forgotpass" },
               ],
             },
             {
-              label:"Caracteristicas",
+              label: "Centros",
               items: [
-                {label:"Listar Caracteristicas", slug:"Caracteristicas/ListarCaracteristicas"},
-                {label:"Crear Caracteristica", slug:"Caracteristicas/CrearCaracteristica"},
-                {label:"Actualizar Caracteristica", slug:"Caracteristicas/ActualizarCaracteristica"}
-              ]
+                { label: "Listar centros", slug: "centros/listar" },
+                { label: "Añadir centro", slug: "centros/crear" },
+                { label: "Editar centro", slug: "centros/actualizar" },
+                { label: "Cambiar estado del centro", slug: "centros/estado" },
+              ],
             },
             {
-              label:"Elementos",
-              items:[
-                {label:"Listar Elementos", slug:"Elementos/ListarElementos"},
-                {label:"Crear Elemento", slug:"Elementos/CrearElemento"},
-                {label:"Actualizar Elemento", slug:"Elementos/ActualizarElemento"},
-                {label:"Cambiar Estado del Elemento", slug:"Elementos/CambiarEstadoElemento"}
-              ]
+              label: "Tipos de sitios",
+              items: [
+                { label: "Listar tipos de sitio", slug: "tipositio/listar" },
+                { label: "Añadir tipos de sitio", slug: "tipositio/crear" },
+                { label: "Editar tipos de sitio", slug: "tipositio/editar" },
+                {
+                  label: "Cambiar estado del tipos de sitio",
+                  slug: "tipositio/estado",
+                },
+              ],
             },
             {
-              label:"Inventario",
-              items:[
-                {label:"Listar Inventario", slug:"Inventario/ListarInventario"},
-                {label:"Gregar Stock Inventario", slug:"Inventario/AgregarStockInventario"},
-                {label:"Cambiar Estado del Inventario", slug:"Inventario/CambiarEstadoInventario"}
-              ]
+              label: "Municipios",
+              items: [
+                { label: "Listar Municipios", slug: "municipio/listar" },
+                { label: "Añadir Municipios", slug: "municipio/crear" },
+                { label: "Editar Municipios", slug: "municipio/editar" },
+                {
+                  label: "Cambiar estado del Municipios",
+                  slug: "municipio/estado",
+                },
+              ],
             },
             {
-              label:"Tipos Movimiento",
-              items:[
-                {label:"Listar TiposMovimiento", slug:"TiposMovimiento/ListarTiposMovimientos"},
-                {label:"Crear Tipo Movimiento", slug:"TiposMovimiento/CrearTipoMovimiento"},
-                {label:"Actualizar Tipo Movimiento", slug:"TiposMovimiento/ActualizarTipoMovimiento"},
-                {label:"Cambiar Estado del Tipo Movimiento", slug:"TiposMovimiento/CambiarEstadoTipoMovimiento"}
-              ]
+              label: "Categorias",
+              items: [
+                { label: "Listar categorias", slug: "categorias/listar" },
+                { label: "Añadir categoria", slug: "categorias/crear" },
+                { label: "Editar categoria", slug: "categorias/editar" },
+                {
+                  label: "Cambiar estado de la categoria",
+                  slug: "categorias/estado",
+                },
+              ],
             },
             {
-              label:"Unidades Medida",
-              items:[
-                {label:"Listar Unidades", slug:"UnidadesMedida/ListarUnidades"},
-                {label:"Crear Unidad", slug:"UnidadesMedida/CrearUnidad"},
-                {label:"Actualizar Unidad", slug:"UnidadesMedida/ActualizarUnidad"},
-                {label:"Cambiar Estado de la Unidad", slug:"UnidadesMedida/CambiarEstadoUnidad"}
-              ]
+              label: "Caracteristicas",
+              items: [
+                {
+                  label: "Listar Caracteristicas",
+                  slug: "Caracteristicas/ListarCaracteristicas",
+                },
+                {
+                  label: "Crear Caracteristica",
+                  slug: "Caracteristicas/CrearCaracteristica",
+                },
+                {
+                  label: "Actualizar Caracteristica",
+                  slug: "Caracteristicas/ActualizarCaracteristica",
+                },
+              ],
+            },
+            {
+              label: "Elementos",
+              items: [
+                {
+                  label: "Listar Elementos",
+                  slug: "Elementos/ListarElementos",
+                },
+                { label: "Crear Elemento", slug: "Elementos/CrearElemento" },
+                {
+                  label: "Actualizar Elemento",
+                  slug: "Elementos/ActualizarElemento",
+                },
+                {
+                  label: "Cambiar Estado del Elemento",
+                  slug: "Elementos/CambiarEstadoElemento",
+                },
+              ],
+            },
+            {
+              label: "Inventario",
+              items: [
+                {
+                  label: "Listar Inventario",
+                  slug: "Inventario/ListarInventario",
+                },
+                {
+                  label: "Gregar Stock Inventario",
+                  slug: "Inventario/AgregarStockInventario",
+                },
+                {
+                  label: "Cambiar Estado del Inventario",
+                  slug: "Inventario/CambiarEstadoInventario",
+                },
+              ],
+            },
+            {
+              label: "Tipos Movimiento",
+              items: [
+                {
+                  label: "Listar TiposMovimiento",
+                  slug: "TiposMovimiento/ListarTiposMovimientos",
+                },
+                {
+                  label: "Crear Tipo Movimiento",
+                  slug: "TiposMovimiento/CrearTipoMovimiento",
+                },
+                {
+                  label: "Actualizar Tipo Movimiento",
+                  slug: "TiposMovimiento/ActualizarTipoMovimiento",
+                },
+                {
+                  label: "Cambiar Estado del Tipo Movimiento",
+                  slug: "TiposMovimiento/CambiarEstadoTipoMovimiento",
+                },
+              ],
+            },
+            {
+              label: "Unidades Medida",
+              items: [
+                {
+                  label: "Listar Unidades",
+                  slug: "UnidadesMedida/ListarUnidades",
+                },
+                { label: "Crear Unidad", slug: "UnidadesMedida/CrearUnidad" },
+                {
+                  label: "Actualizar Unidad",
+                  slug: "UnidadesMedida/ActualizarUnidad",
+                },
+                {
+                  label: "Cambiar Estado de la Unidad",
+                  slug: "UnidadesMedida/CambiarEstadoUnidad",
+                },
+              ],
             },
           ],
         },
