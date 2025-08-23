@@ -4,19 +4,21 @@ slug: "TiposMovimiento/ListarTiposMovimientos"
 ---
 
 import { Image } from "astro:assets";
-import listarArea from "../../../../assets/funcionalidades/caracteristicas/";
+import ListarTipos from "../../../../assets/funcionalidades/tiposMovimiento/ListarTipos.png";
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
 import { API_BASE_URL } from "../../../../utils/constants.ts";
 
 <Tabs>
   <TabItem label="Endpoint">
-    <ApiEndpoint url={`${API_BASE_URL}bodega/caracteristicas`} />
+    <ApiEndpoint url={`${API_BASE_URL}bodega/tipos`} />
   </TabItem>
 </Tabs>
 
-En este aparatdao de dara de manera general un listado con los tipos de movimiento registrados en Formatrack.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+En este aparatdao de dara de manera general un listado con los tipos de movimiento registrados en el Software Formatrack.
+Aqui encontramos de manera general todas las funcionalidades de esta vista como lo son el crear, editar o cambiar estado y ademas tambien podemos ver que podemos realizar una busqueda por filtrado de fecha o escribiendo en el buscador
+
+<Image src={ListarTipos} alt="ListarTipos" width={3148} height={2270} />
 
 Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice le siguiente video donde se dara una explicacion mas clara del proceso.
 
@@ -25,9 +27,8 @@ Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visu
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <iframe
-    width="720"
-    height="405"
-    src="https://www.youtube.com/embed/o3ENiCB51To"
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/hiFoZWS_LxY"
     
     title="Tutorial"
     frameBorder="0"

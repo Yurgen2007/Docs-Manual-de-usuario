@@ -5,38 +5,35 @@ slug: "Elementos/CambiarEstadoElemento"
 
 
 import { Image } from "astro:assets";
-import listarArea from "../../../../assets/funcionalidades/caracteristicas/";
+import EstadoElemento from "../../../../assets/funcionalidades/elementos/CambiarEstado.png";
+import AlertaEstado from "../../../../assets/funcionalidades/elementos/alertaEstado.png";
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
 import { API_BASE_URL } from "../../../../utils/constants.ts";
 
 <Tabs>
   <TabItem label="Endpoint">
-    <ApiEndpoint url={`${API_BASE_URL}bodega/caracteristicas`} />
+    <ApiEndpoint url={`${API_BASE_URL}bodega/elementos`} />
   </TabItem>
 </Tabs>
 
-Para realizar el cambio de estado debemos en nuestro apartado de elementos nos vamos centrar en nuestra tabla exactamenete en la columna de acciones visualizaremos dos iconos en las cuales el de la basurita nos va  apermitir cambiar el estado.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+Para realizar el cambio de estado debemos en nuestro apartado de elementos nos vamos centrar en nuestra tabla exactamente en la columna de acciones visualizaremos dos iconos en las cuales el de la basurita nos va a permitir cambiar el estado.
+<Image src={EstadoElemento} alt="EstadoElemento" width={3148} height={2270} />
 
 Por ende daremos click en y nos mostrara una alerta con el cambio de estado exitoso y el elemento pasaria  a los inactivos .
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+<Image src={AlertaEstado} alt="AlertaEstado" width={3148} height={2270} />
 
 Si se quieren visualizar o volver a activar debemos acceder en el filtro de estados seleccionar inactivos o todos para poder verlos y en caso tal de querer activarlo nuevamente debmos dar click esta vez en nuestro icono del chulito o check y luego de esto nos dara una alerta de cambio de estado exitoso y se cambiara a activo nuevamente.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
 
 
-Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice le siguiente video donde se dara una explicacion mas clara de la funcionalidad.
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara de la funcionalidad.
 
 ### Video ...
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <iframe
-    width="720"
-    height="405"
-    src="https://www.youtube.com/embed/o3ENiCB51To"
-    
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/-CtiPmBa-bE"
     title="Tutorial"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

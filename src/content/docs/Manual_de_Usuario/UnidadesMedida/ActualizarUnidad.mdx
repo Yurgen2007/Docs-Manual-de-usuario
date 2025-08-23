@@ -5,38 +5,41 @@ slug: "UnidadesMedida/ActualizarUnidad"
 
 
 import { Image } from "astro:assets";
-import listarArea from "../../../../assets/funcionalidades/caracteristicas/";
+import ActualizarUnidad from "../../../../assets/funcionalidades/unidades/actualizarUnidad.png";
+import FormEdit from "../../../../assets/funcionalidades/unidades/formActualizar.png";
+import Alerta from "../../../../assets/funcionalidades/unidades/alertaActualizar.png";
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
 import { API_BASE_URL } from "../../../../utils/constants.ts";
 
 <Tabs>
   <TabItem label="Endpoint">
-    <ApiEndpoint url={`${API_BASE_URL}bodega/caracteristicas`} />
+    <ApiEndpoint url={`${API_BASE_URL}bodega/unidades`} />
   </TabItem>
 </Tabs>
 
 Para poder llevar a cabo nuestra actualizacion de unidades debemos en nuestro apartado de unidades dar click en el boton que encontramos en la parte superior izquierda  encima de nuestra tabla. 
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+
+<Image src={ActualizarUnidad} alt="ActualizarUnidad" width={3148} height={2270} />
 
 Luego se nos deplegara el formulario con la informacion que nos permite actualizar. Cabe resaltar que para la actualizacion no necesariamente debe editar todos los campos, solo los necesarios.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
 
-Luego de realizados los cambios debemos dar click en guardar y despues de esto nos dara una alerta con actualizacion exitosa  y se nos actualizara la informacion de las unidades que hemos cambiado.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+Despues de realizados los cambios debemos dar click en guardar y despues de esto nos dara una alerta con actualizacion exitosa  y se nos actualizara la informacion de las unidades que hemos cambiado.
+
+<Image src={FormEdit} alt="FormEdit" width={3148} height={2270} />
+<Image src={Alerta} alt="Alerta" width={3148} height={2270} />
 
 
-Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice le siguiente video donde se dara una explicacion mas clara de la funcionalidad.
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara de la funcionalidad.
 
 ### Video ...
 
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <iframe
-    width="720"
-    height="405"
-    src="https://www.youtube.com/embed/o3ENiCB51To"
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/y8YULDFn9YI"
     
     title="Tutorial"
     frameBorder="0"

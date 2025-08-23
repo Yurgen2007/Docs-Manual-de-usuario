@@ -3,39 +3,43 @@ title: "Actualizar un Elemento"
 slug: "Elementos/ActualizarElemento"
 ---
 
-
 import { Image } from "astro:assets";
-import listarArea from "../../../../assets/funcionalidades/caracteristicas/";
+import Actualizar from "../../../../assets/funcionalidades/elementos/EditarElemento.png";
+import formActualizacion from "../../../../assets/funcionalidades/elementos/formEdit.png";
+import alerta from "../../../../assets/funcionalidades/elementos/alertaEdit.png";
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
 import { API_BASE_URL } from "../../../../utils/constants.ts";
 
 <Tabs>
   <TabItem label="Endpoint">
-    <ApiEndpoint url={`${API_BASE_URL}bodega/caracteristicas`} />
+    <ApiEndpoint url={`${API_BASE_URL}bodega/elementos`} />
   </TabItem>
 </Tabs>
 
-Para poder llevar a cabo nuestra actualizacion de elementos debemos en nuestro apartado de elementos dar clicke enel boton que encontramos en la aparte superior izquierda  encima de nuestra tabla. 
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+Para poder llevar a cabo nuestra actualizacion de elementos debemos en nuestro apartado de elementos debemos dar click en el boton que encontramos en la aparte superior izquierda encima de nuestra tabla.
 
-Debemos dar click y se nos deplegara el formulario con la informacion que nos permite actualizar. cabe resasltar que para la actualizacion no necesariamente debe editar todos los campos, solo los necesarios.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+<Image src={Actualizar} alt="Actualizar" width={3148} height={2270} />
 
-Luego de ealizados los cambios debemos dar click en guardar y luego de esto nos dara una alerta con actualizacion exitosa  y se nos actualizara la informacion del elemento que hemos cambiado.
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
-<Image src={listarArea} alt="listarArea" width={3148} height={2270} />
+Luego se nos deplegara el formulario con la informacion que nos permite actualizar. Cabe resaltar que para la actualizacion no necesariamente debe editar todos los campos, solo los necesarios.
+Luego de realizados los cambios debemos dar click en guardar y luego de esto nos dara una alerta con actualizacion exitosa y se nos actualizara la informacion del elemento que hemos cambiado.
 
-Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice le siguiente video donde se dara una explicacion mas clara del proceso.
+<Image
+  src={formActualizacion}
+  alt="formActualizacion"
+  width={3148}
+  height={2270}
+/>
+<Image src={alerta} alt="alerta" width={3148} height={2270} />
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara del proceso.
 
 ### Video ....
 
 <div style={{ display: "flex", justifyContent: "center" }}>
   <iframe
-    width="720"
-    height="405"
-    src="https://www.youtube.com/embed/o3ENiCB51To"
-    
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/Nh9AQzKFNpM"
     title="Tutorial"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
