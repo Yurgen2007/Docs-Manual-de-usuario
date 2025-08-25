@@ -2,3 +2,50 @@
 title: "Listar Inventario"
 slug: "Inventario/ListarInventario"
 ---
+
+import { Image } from "astro:assets";
+import areas from "../../../../assets/funcionalidades/inventario/ListarAreasInventario.png";
+import sitios from "../../../../assets/funcionalidades/inventario/ListarSitiosAreaInventario.png";
+import ListarInventario from "../../../../assets/funcionalidades/inventario/InventarioSitio.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/inventario`} />
+  </TabItem>
+</Tabs>
+
+Primero nos dara un listado de las areas que exiten oara seleccionar.
+
+<Image src={areas} alt="areas" width={3148} height={2270} />
+
+En cada area se estableceran una serie de sitios. 
+
+<Image src={sitios} alt="sitios" width={3148} height={2270} />
+
+Finalmente dentro decada sitio encontraremos el inventario con los elemntos correpondientes a este.
+En este apartado encontraremos de manera general el listado de los elementos registrados en el software Formatrack.
+Aqui encontramos de manera general todas las funcionalidades de esta vista como lo son el editar o cambiar estado y ademas tambien podemos ver que podemos realizar una busqueda por filtrado de fecha o escribiendo en el buscador.
+
+
+
+<Image src={ListarInventario} alt="ListarInventario" width={3148} height={2270} />
+
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara del proceso.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/_kWcaZd2PFM"
+    
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

@@ -221,7 +221,7 @@ export default defineConfig({
                   slug: "Inventario/ListarInventario",
                 },
                 {
-                  label: "Gregar Stock Inventario",
+                  label: "Agregar Stock Inventario",
                   slug: "Inventario/AgregarStockInventario",
                 },
                 {
@@ -266,6 +266,71 @@ export default defineConfig({
                 {
                   label: "Cambiar Estado de la Unidad",
                   slug: "UnidadesMedida/CambiarEstadoUnidad",
+                },
+              ],
+            },
+            {
+              label: "Roles",
+              items: [
+                {
+                  label: "Listar Roles",
+                  slug: "Roles/ListarRoles",
+                },
+                { label: "Crear Rol", slug: "Roles/CrearRol" },
+                {
+                  label: "Actualizar Rol",
+                  slug: "Roles/ActualizarRol",
+                },
+                {
+                  label: "Cambiar Estado del Rol",
+                  slug: "Roles/CambiarEstadoRol",
+                },
+              ],
+            },
+            {
+              label: "Codigo Inventario",
+              items: [
+                {
+                  label: "Listar Codigos",
+                  slug: "CodigoInventario/Listar",
+                },
+                {
+                  label: "Actualizar Codigo",
+                  slug: "CodigoInventario/Editar",
+                },
+              ],
+            },
+            {
+              label: "Notificaciones",
+              items: [
+                {
+                  label: "Ver Notificaciones",
+                  slug: "Notificaciones/VerNotificaciones",
+                },
+                {
+                  label: "Cambiar Estado",
+                  slug: "Notificaciones/CambiarEstado",
+                },
+              ],
+            },
+            {
+              label: "Movimientos",
+              items: [
+                {
+                  label: "Listar Movimientos",
+                  slug: "Movimientos/ListarMovimiento",
+                },
+                {
+                  label: "Crear Movimiento",
+                  slug: "Movimientos/CrearMovimiento",
+                },
+                {
+                  label: "Actualizar Movimiento",
+                  slug: "Movimientos/ActualizarMovimiento",
+                },
+                {
+                  label: "Aceptar o Rechazar Movimiento",
+                  slug: "Movimientos/AceptarYRechazarMovimiento",
                 },
               ],
             },
