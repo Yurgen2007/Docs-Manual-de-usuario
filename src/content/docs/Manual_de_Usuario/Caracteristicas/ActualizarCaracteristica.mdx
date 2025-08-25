@@ -1,0 +1,40 @@
+---
+title: "Editar Carcteristica "
+slug: "Caracteristicas/ActualizarCaracteristica"
+---
+
+import { Image } from "astro:assets";
+import Actualizar from "../../../../assets/funcionalidades/caracteristicas/actualizarCaracteristica.png";
+import formActualizar from "../../../../assets/funcionalidades/caracteristicas/formActualizacion.png";
+import alerta from "../../../../assets/funcionalidades/caracteristicas/alertaActualizar.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/caracteristicas`} />
+  </TabItem>
+</Tabs>
+
+Para la actualizacion de una caracteristica primero debemos dirigirnos a nuestra tabla en el campo acciones debemos dar click en el icono de lapiz.
+<Image src={Actualizar} alt="Actualizar" width={3148} height={2270} />
+
+Se nos desplegara un modal con los campos que podemos actualizar y procederemos a actualizar la caracteristica y cuando ya finalicemos daremos click en guaradar para que nuestros cambios se guarden.
+<Image src={formActualizar} alt="formActualizar" width={3148} height={2270} />
+<Image src={alerta} alt="alerta" width={3148} height={2270} />
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara de la funcionalidad.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/qaoW-9I9qz0"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

@@ -1,0 +1,38 @@
+---
+title: "Listar Caracteristicas"
+slug: "TiposMovimiento/ListarTiposMovimientos"
+---
+
+import { Image } from "astro:assets";
+import ListarTipos from "../../../../assets/funcionalidades/tiposMovimiento/ListarTipos.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/tipos`} />
+  </TabItem>
+</Tabs>
+
+En este aparatdao de dara de manera general un listado con los tipos de movimiento registrados en el Software Formatrack.
+Aqui encontramos de manera general todas las funcionalidades de esta vista como lo son el crear, editar o cambiar estado y ademas tambien podemos ver que podemos realizar una busqueda por filtrado de fecha o escribiendo en el buscador
+
+<Image src={ListarTipos} alt="ListarTipos" width={3148} height={2270} />
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice le siguiente video donde se dara una explicacion mas clara del proceso.
+
+### Video ...
+
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/hiFoZWS_LxY"
+    
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

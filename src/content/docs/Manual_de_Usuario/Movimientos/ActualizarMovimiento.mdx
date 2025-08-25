@@ -1,0 +1,46 @@
+---
+title: "Actualizar Movimiento"
+slug: "Movimientos/ActualizarMovimiento"
+---
+
+import { Image } from "astro:assets";
+import Actualizar from "../../../../assets/funcionalidades/movimientos/editarMovimiento.png";
+import formEdit from "../../../../assets/funcionalidades/movimientos/formEditar.png";
+import alerta from "../../../../assets/funcionalidades/movimientos/alertaEditar.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/movimientos`} />
+  </TabItem>
+</Tabs>
+
+Para llevar a cabo la actualizacion del movimiento debemos dirigirnos a nuestra tabla y revisar que en nuestras acciones hay un icono de un lapiz el cual debemos seleccionar.
+
+<Image src={Actualizar} alt="Actualizar" width={3148} height={2270} />
+
+Nos deplegara el formulaio con los campos que me permite actualizar y pues puedo cambiar los datos que considere necesrio, no debe obligatoriamente ser todos.
+Cuando los corregimos segun nuestra necesidad debemos dar click en guardar para que nuestro movimiento se guarde correctamente.
+
+<Image src={formEdit} alt="formEdit" width={3148} height={2270} />
+
+Luego se nos mostrara una alerta con la atualizacion exitosa de los datos que decidmos cambiar.
+
+<Image src={alerta} alt="alerta" width={3148} height={2270} />
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara del proceso.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/_kWcaZd2PFM"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

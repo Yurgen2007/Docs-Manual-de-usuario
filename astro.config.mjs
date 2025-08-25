@@ -18,7 +18,6 @@ export default defineConfig({
         {
           label: "Manual de Usuario",
           items: [
-
             {
               label: "Auth",
               items: [
@@ -114,51 +113,225 @@ export default defineConfig({
               ],
             },
             {
-              label: 'Usuarios',
+              label: "Usuarios",
               items: [
-                { label: 'Listar Usuarios', slug: 'usuarios/listarUsuarios' },
-                { label: 'Añadir Usuario', slug: 'usuarios/crearUsuario' },
-                { label: 'Carga masiva de usuarios', slug: 'usuarios/subirMasivo' },
-                { label: 'Editar usuario', slug: 'usuarios/editar' },
-                { label: 'Cambiar estado del usuario', slug: 'usuarios/estado' },
-                { label: 'Editar perfil de usuario', slug: 'usuarios/editarperfil' },
-                { label: 'Olvide mi contraseña', slug: 'usuarios/forgotpass' },
+                { label: "Listar Usuarios", slug: "usuarios/listarUsuarios" },
+                { label: "Añadir Usuario", slug: "usuarios/crearUsuario" },
+                {
+                  label: "Carga masiva de usuarios",
+                  slug: "usuarios/subirMasivo",
+                },
+                { label: "Editar usuario", slug: "usuarios/editar" },
+                {
+                  label: "Cambiar estado del usuario",
+                  slug: "usuarios/estado",
+                },
+                {
+                  label: "Editar perfil de usuario",
+                  slug: "usuarios/editarperfil",
+                },
+                { label: "Olvide mi contraseña", slug: "usuarios/forgotpass" },
               ],
             },
             {
-              label: 'Centros',
+              label: "Centros",
               items: [
-                { label: 'Listar centros', slug: 'centros/listar' },
-                { label: 'Añadir centro', slug: 'centros/crear' },
-                { label: 'Editar centro', slug: 'centros/actualizar' },
-                { label: 'Cambiar estado del centro', slug: 'centros/estado' },
+                { label: "Listar centros", slug: "centros/listar" },
+                { label: "Añadir centro", slug: "centros/crear" },
+                { label: "Editar centro", slug: "centros/actualizar" },
+                { label: "Cambiar estado del centro", slug: "centros/estado" },
               ],
             },
             {
-              label: 'Tipos de sitios',
+              label: "Tipos de sitios",
               items: [
-                { label: 'Listar tipos de sitio', slug: 'tipositio/listar' },
-                { label: 'Añadir tipos de sitio', slug: 'tipositio/crear' },
-                { label: 'Editar tipos de sitio', slug: 'tipositio/editar' },
-                { label: 'Cambiar estado del tipos de sitio', slug: 'tipositio/estado' },
+                { label: "Listar tipos de sitio", slug: "tipositio/listar" },
+                { label: "Añadir tipos de sitio", slug: "tipositio/crear" },
+                { label: "Editar tipos de sitio", slug: "tipositio/editar" },
+                {
+                  label: "Cambiar estado del tipos de sitio",
+                  slug: "tipositio/estado",
+                },
               ],
             },
             {
-              label: 'Municipios',
+              label: "Municipios",
               items: [
-                { label: 'Listar Municipios', slug: 'municipio/listar' },
-                { label: 'Añadir Municipios', slug: 'municipio/crear' },
-                { label: 'Editar Municipios', slug: 'municipio/editar' },
-                { label: 'Cambiar estado del Municipios', slug: 'municipio/estado' },
+                { label: "Listar Municipios", slug: "municipio/listar" },
+                { label: "Añadir Municipios", slug: "municipio/crear" },
+                { label: "Editar Municipios", slug: "municipio/editar" },
+                {
+                  label: "Cambiar estado del Municipios",
+                  slug: "municipio/estado",
+                },
               ],
             },
             {
-              label: 'Categorias',
+              label: "Categorias",
               items: [
-                { label: 'Listar categorias', slug: 'categorias/listar' },
-                { label: 'Añadir categoria', slug: 'categorias/crear' },
-                { label: 'Editar categoria', slug: 'categorias/editar' },
-                { label: 'Cambiar estado de la categoria', slug: 'categorias/estado' },
+                { label: "Listar categorias", slug: "categorias/listar" },
+                { label: "Añadir categoria", slug: "categorias/crear" },
+                { label: "Editar categoria", slug: "categorias/editar" },
+                {
+                  label: "Cambiar estado de la categoria",
+                  slug: "categorias/estado",
+                },
+              ],
+            },
+            {
+              label: "Caracteristicas",
+              items: [
+                {
+                  label: "Listar Caracteristicas",
+                  slug: "Caracteristicas/ListarCaracteristicas",
+                },
+                {
+                  label: "Crear Caracteristica",
+                  slug: "Caracteristicas/CrearCaracteristica",
+                },
+                {
+                  label: "Actualizar Caracteristica",
+                  slug: "Caracteristicas/ActualizarCaracteristica",
+                },
+              ],
+            },
+            {
+              label: "Elementos",
+              items: [
+                {
+                  label: "Listar Elementos",
+                  slug: "Elementos/ListarElementos",
+                },
+                { label: "Crear Elemento", slug: "Elementos/CrearElemento" },
+                {
+                  label: "Actualizar Elemento",
+                  slug: "Elementos/ActualizarElemento",
+                },
+                {
+                  label: "Cambiar Estado del Elemento",
+                  slug: "Elementos/CambiarEstadoElemento",
+                },
+              ],
+            },
+            {
+              label: "Inventario",
+              items: [
+                {
+                  label: "Listar Inventario",
+                  slug: "Inventario/ListarInventario",
+                },
+                {
+                  label: "Agregar Stock Inventario",
+                  slug: "Inventario/AgregarStockInventario",
+                },
+                {
+                  label: "Cambiar Estado del Inventario",
+                  slug: "Inventario/CambiarEstadoInventario",
+                },
+              ],
+            },
+            {
+              label: "Tipos Movimiento",
+              items: [
+                {
+                  label: "Listar TiposMovimiento",
+                  slug: "TiposMovimiento/ListarTiposMovimientos",
+                },
+                {
+                  label: "Crear Tipo Movimiento",
+                  slug: "TiposMovimiento/CrearTipoMovimiento",
+                },
+                {
+                  label: "Actualizar Tipo Movimiento",
+                  slug: "TiposMovimiento/ActualizarTipoMovimiento",
+                },
+                {
+                  label: "Cambiar Estado del Tipo Movimiento",
+                  slug: "TiposMovimiento/CambiarEstadoTipoMovimiento",
+                },
+              ],
+            },
+            {
+              label: "Unidades Medida",
+              items: [
+                {
+                  label: "Listar Unidades",
+                  slug: "UnidadesMedida/ListarUnidades",
+                },
+                { label: "Crear Unidad", slug: "UnidadesMedida/CrearUnidad" },
+                {
+                  label: "Actualizar Unidad",
+                  slug: "UnidadesMedida/ActualizarUnidad",
+                },
+                {
+                  label: "Cambiar Estado de la Unidad",
+                  slug: "UnidadesMedida/CambiarEstadoUnidad",
+                },
+              ],
+            },
+            {
+              label: "Roles",
+              items: [
+                {
+                  label: "Listar Roles",
+                  slug: "Roles/ListarRoles",
+                },
+                { label: "Crear Rol", slug: "Roles/CrearRol" },
+                {
+                  label: "Actualizar Rol",
+                  slug: "Roles/ActualizarRol",
+                },
+                {
+                  label: "Cambiar Estado del Rol",
+                  slug: "Roles/CambiarEstadoRol",
+                },
+              ],
+            },
+            {
+              label: "Codigo Inventario",
+              items: [
+                {
+                  label: "Listar Codigos",
+                  slug: "CodigoInventario/Listar",
+                },
+                {
+                  label: "Actualizar Codigo",
+                  slug: "CodigoInventario/Editar",
+                },
+              ],
+            },
+            {
+              label: "Notificaciones",
+              items: [
+                {
+                  label: "Ver Notificaciones",
+                  slug: "Notificaciones/VerNotificaciones",
+                },
+                {
+                  label: "Cambiar Estado",
+                  slug: "Notificaciones/CambiarEstado",
+                },
+              ],
+            },
+            {
+              label: "Movimientos",
+              items: [
+                {
+                  label: "Listar Movimientos",
+                  slug: "Movimientos/ListarMovimiento",
+                },
+                {
+                  label: "Crear Movimiento",
+                  slug: "Movimientos/CrearMovimiento",
+                },
+                {
+                  label: "Actualizar Movimiento",
+                  slug: "Movimientos/ActualizarMovimiento",
+                },
+                {
+                  label: "Aceptar o Rechazar Movimiento",
+                  slug: "Movimientos/AceptarYRechazarMovimiento",
+                },
               ],
             },
           ],
@@ -166,5 +339,4 @@ export default defineConfig({
       ],
     }),
   ],
-
 });

@@ -1,0 +1,49 @@
+---
+title: "Crear Movimiento"
+slug: "Movimientos/CrearMovimiento"
+---
+
+import { Image } from "astro:assets";
+import CrearMove from "../../../../assets/funcionalidades/movimientos/CrearMovimiento.png";
+import formCrear from "../../../../assets/funcionalidades/movimientos/formRegistro.png";
+import guardar from "../../../../assets/funcionalidades/movimientos/guardarMove.png";
+import alerta from "../../../../assets/funcionalidades/movimientos/alertaRegistro.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/movimientos`} />
+  </TabItem>
+</Tabs>
+
+Para crear un movimento estando en nuestro aparatado de movimientos debemos dar click al boton que encontramos en la parte superior izquierda, encima de nuestra tabla.
+<Image src={CrearMove} alt="CrearMove" width={3148} height={2270} />
+
+Este nos deplegara un formulario el cual debemos llenar.
+<Image src={formCrear} alt="formCrear" width={3148} height={2270} />
+
+Luego de llenado este formulario debemos proceder al final a guardar el registro de este dondo click en el boton de "Guardar"
+
+<Image src={guardar} alt="guardar" width={3148} height={2270} />
+
+Finalmente nos daran una alerta con un mensaje de registro exitoso y posteriormente nuestro moviimento se agregara con exito.
+<Image src={alerta} alt="alerta" width={3148} height={2270} />
+
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara del proceso.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/_kWcaZd2PFM"
+    
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

@@ -1,0 +1,39 @@
+---
+title: "Aceptar o Rechazar un Movimento"
+slug: "Movimientos/AceptarYRechazarMovimiento"
+---
+
+import { Image } from "astro:assets";
+import noti from "../../../../assets/funcionalidades/movimientos/notificacion.png";
+import aceptarRechazar from "../../../../assets/funcionalidades/movimientos/aceptarORechazarMove.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/movimientos`} />
+  </TabItem>
+</Tabs>
+
+Para aceptar o rechazar un movimiento debemos acceder a nuestras notificacione y ahi acceder a la card del movimiento pendiente.
+<Image src={noti} alt="noti" width={3148} height={2270} />
+
+Luego  no dirigira al detalle de ese movimiento y lo que debemos hacer es revisar y aceptar o rechazar dependiendo de la situacion. 
+
+<Image src={aceptarRechazar} alt="aceptarRechazar" width={3148} height={2270} />
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara del proceso.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/_kWcaZd2PFM"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

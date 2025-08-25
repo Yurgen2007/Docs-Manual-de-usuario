@@ -1,0 +1,47 @@
+---
+title: "Crear un Elemento"
+slug: "Elementos/CrearElemento"
+---
+
+
+import { Image } from "astro:assets";
+import CrearElemento from "../../../../assets/funcionalidades/elementos/CrearElemento.png";
+import FormCrear from "../../../../assets/funcionalidades/elementos/formCrear.png";
+import Guardar from "../../../../assets/funcionalidades/elementos/guardarElemento.png";
+import alertaCrear from "../../../../assets/funcionalidades/elementos/alertaRegistro.png";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}bodega/elementos`} />
+  </TabItem>
+</Tabs>
+
+Para proceder con nuestra creacion de elementos, en nuestro apartado debemos situarnos en el boton que encontramos en la parte superior izquierda y daremos click en este.
+<Image src={CrearElemento} alt="CrearElemento" width={3148} height={2270} />
+
+Luego este nos deplegara un formulario e cual contara con la informacion que debemos llenar para realizar el respectivo registro.
+<Image src={FormCrear} alt="FormCrear" width={3148} height={2270} />
+
+Luego de llenados los campos para poder registrar el elmento debemos al final del formulario dar click en el boton de guardar y esto nos dara una alerta de regsittro exitoso y luego en nuestra tabla aparecera el nuevo elemento registrado.
+<Image src={Guardar} alt="Guardar" width={3148} height={2270} />
+<Image src={alertaCrear} alt="alertaCrear" width={3148} height={2270} />
+
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara de la funcionalidad.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/P5ShNXVpVEY"
+    
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

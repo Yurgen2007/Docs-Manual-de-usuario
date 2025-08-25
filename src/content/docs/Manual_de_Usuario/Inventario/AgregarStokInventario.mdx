@@ -1,0 +1,66 @@
+---
+title: "Agregar Stock a un Elemento en el Inventario"
+slug: "Inventario/AgregarStockInventario"
+---
+
+import { Image } from "astro:assets";
+import codigos from "../../../../assets/funcionalidades/inventario/AgregarStockCodigo.png";
+import cantidad from "../../../../assets/funcionalidades/inventario/AgregarStockCantidad.png";
+import formCodigo from "../../../../assets/funcionalidades/inventario/formCodigos.png";
+import formCantidad from "../../../../assets/funcionalidades/inventario/StockCantidad.png";
+import addCodigos from "../../../../assets/funcionalidades/inventario/agregarYListarCodigos.png";
+import guardarC from "../../../../assets/funcionalidades/inventario/GuardarCodigosYAgregarStock.png";
+import GuardarS from "../../../../assets/funcionalidades/inventario/GuardarStockCantidad.png";
+import AlertaR from "../../../../assets/funcionalidades/inventario/alertaRegistro.png";
+import AlertaS from "../../../../assets/funcionalidades/inventario/alertaStockCantidad.png";
+
+En primer lugara tenemos dos formas para agregar stock:
+
+1. Cuando el elemento posee caracteristicas.
+2. Cuando el elemento no posee caracteristicas.
+
+### CASO 1
+
+Para agregar el stock a los elementos con este especificacion, primero debemos dirigirnos a nuestra tabla justamente al boton que encontramos despues de la columna de estado. Debemos dar click en el que tiene el + .
+
+<Image src={codigos} alt="codigos" width={3148} height={2270} />
+
+Se nos deslegara un formulario para agregar el stock pero por medio de codigos, es decir debemos ingresar los codigos para que nuestro stock sume. A mdeida que agregamos codigos ellos e van agregando y al final damos click en guardar y actualizar stock poara que se guarde la informacion.
+
+<Image src={formCodigo} alt="formCodigo" width={3148} height={2270} />
+<Image src={addCodigos} alt="addCodigos" width={3148} height={2270} />
+<Image src={guardarC} alt="guardarC" width={3148} height={2270} />
+
+Despues nos dara una alerta de cuantos codigos se han registrado con exito.
+
+<Image src={AlertaR} alt="AlertaR" width={3148} height={2270} />
+
+### CASO 2
+
+En este caso como nos encontramos en nuestro apartado lo qyue debemos hacer es situarns ene nuestra tabla y darle click al boton con el mas que se encuentra luego de la columna de estado.
+
+<Image src={cantidad} alt="cantidad" width={3148} height={2270} />
+
+Despues se nos desplegara un modal el cual solo nos pedira que ingresemos solo la cantidad yya luego deeso daremos en el boton de Guardar.
+
+<Image src={formCantidad} alt="formCantidad" width={3148} height={2270} />
+<Image src={GuardarS} alt="GuardarS" width={3148} height={2270} />
+
+Por ultimo se nos mostrara una alerta con stock actualizado correctamenete y el stock se actualizara
+
+<Image src={AlertaS} alt="EstadoElemento" width={3148} height={2270} />
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara de la funcionalidad.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/-CtiPmBa-bE"
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
