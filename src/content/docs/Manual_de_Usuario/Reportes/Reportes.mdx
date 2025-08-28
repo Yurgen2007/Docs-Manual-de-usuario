@@ -1,0 +1,37 @@
+---
+title: "Ver Reportes"
+slug: "Reportes/Reportes"
+---
+
+import { Image } from "astro:assets";
+import Reportes from "../../../../assets/funcionalidades/Reportes/Reportes.png"
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import ApiEndpoint from "../../../../components/ApiEndpoint.astro";
+import { API_BASE_URL } from "../../../../utils/constants.ts";
+
+<Tabs>
+  <TabItem label="Endpoint">
+    <ApiEndpoint url={`${API_BASE_URL}reportes`} />
+  </TabItem>
+</Tabs>
+
+En este apartado encontraremos de manera general  lavista de reportes y en la cual podemos acceder en nuestro select al uno de los que encontramos disponibles  y en la ultima columna de nuestra tabla vamos a poder descargar el pdf de nuestro reporte
+
+<Image src={Reportes} alt="Reportes" width={3148} height={2270} />
+
+
+Si la informacion proporcionada no fue lo bastante clara lo invitamos a que visualice el siguiente video donde se dara una explicacion mas clara del proceso.
+
+### Video ...
+
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <iframe
+    style={{ height: "500px", width: "100%" }}
+    src="https://www.youtube.com/embed/ro9ud0ih0_8"
+    
+    title="Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>

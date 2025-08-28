@@ -334,6 +334,15 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              label: "Reportes",
+              items: [
+                {
+                  label: "Ver Reportes",
+                  slug: "Reportes/Reportes",
+                },
+              ],
+            },
           ],
         },
       ],
