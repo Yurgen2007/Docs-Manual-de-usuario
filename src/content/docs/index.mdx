@@ -45,14 +45,15 @@ En este apartado se definen las credenciales básicas necesarias para ingresar y
 El sistema incluye un usuario administrador inicial con los siguientes datos, útil para el primer ingreso al sistema:
 
 ```ts
-{
-  idUsuario: 1,
-  documento: 1111111111,
-  nombre: "Admin",
-  estado: true,
-  password: "hola1234",
-  fkRol: { idRol: 1 }
-}
+      {
+        idUsuario: 1,
+        documento: 123456,
+        nombre: 'Admin',
+        apellido: 'Account',
+        estado: true,
+        password: 'Admin123456',
+        fkRol: { idRol: 1 },
+      },
 ```
 
 ### ✉️ Configuración del Correo para Recuperación de Contraseña
