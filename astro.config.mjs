@@ -348,4 +348,5 @@ export default defineConfig({
       ],
     }),
   ],
+  base: "/doc-manual/"
 });
