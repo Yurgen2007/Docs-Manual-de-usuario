@@ -1,49 +1,19 @@
-# Starlight Starter Kit: Basics
+# Manual de usuario Formatrack
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+## Clonar el repositoro
 
-```
-npm create astro@latest -- --template starlight
-```
+Para clonar el repositorio abre tu cmd en la carpeta donde desees que se clone y ejecuta:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+git clone https://github.com/Yurgen2007/Docs-Manual-de-usuario.git
 
-## 🚀 Project Structure
+Luego abres la carpeta Docs-Manual-de-usuario que se crea
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+## Instalacion de dependencias 
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Ya dentro de esa carpeta ejecuta "npm i" para instalar todas las dependencias necesarias 
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## Variables de entorno
 
-Static assets, like favicons, can be placed in the `public/` directory.
+Crea un archivo .env en la raiz del proyecto guiandote por el .env.example que encontraras ahi, donde podras escribir el endpoint base de tu api/backend
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
