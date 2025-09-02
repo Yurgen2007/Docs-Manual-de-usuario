@@ -17,3 +17,6 @@ Ya dentro de esa carpeta ejecuta "npm i" para instalar todas las dependencias ne
 
 Crea un archivo .env en la raiz del proyecto guiandote por el .env.example que encontraras ahi, donde podras escribir el endpoint base de tu api/backend
 
+## Correr el proyecto
+
+Cuando ya tengas listos los pasos anteriores puedes ejecutar " npm run dev " para correr el proyecto
